@@ -5,10 +5,11 @@
     <item
         android:id="@+id/navigation_home"
         android:icon="@drawable/ic_home_black_24dp"
-        android:title="Home" />
+        android:title="Home"
+        />
     <item
         android:id="@+id/navigation_sms"
-        android:icon="@drawable/ic_fab"
+        android:icon="@drawable/ic_home_black_24dp"
         android:title="Tanya"
         />
     <item

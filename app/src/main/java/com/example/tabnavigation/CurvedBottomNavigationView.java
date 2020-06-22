@@ -77,7 +77,7 @@ public class CurvedBottomNavigationView extends BottomNavigationView {
         mFirstCurveEndPoint.set((mNavigationBarWidth / 2), (CURVE_CIRCLE_RADIUS- mNavigationBarHeight ));
         // same thing for the second curve
         mSecondCurveStartPoint = mFirstCurveEndPoint;
-        mSecondCurveEndPoint.set((mNavigationBarWidth / 2) + (CURVE_CIRCLE_RADIUS * 4)-60, 0);
+        mSecondCurveEndPoint.set((mNavigationBarWidth / 2) + (CURVE_CIRCLE_RADIUS * 3)-(CURVE_CIRCLE_RADIUS/12), 0);
 
         // the coordinates (x,y)  of the 1st control point on a cubic curve
         mFirstCurveControlPoint1.set(mFirstCurveStartPoint.x+ CURVE_CIRCLE_RADIUS , mFirstCurveStartPoint.y);
@@ -85,7 +85,7 @@ public class CurvedBottomNavigationView extends BottomNavigationView {
         mFirstCurveControlPoint2.set(mFirstCurveEndPoint.x - (CURVE_CIRCLE_RADIUS * 2), mFirstCurveEndPoint.y);
 
         mSecondCurveControlPoint1.set(
-                mSecondCurveStartPoint.x + (CURVE_CIRCLE_RADIUS*2)-30,
+                mSecondCurveStartPoint.x + (CURVE_CIRCLE_RADIUS*2)-(CURVE_CIRCLE_RADIUS/2),
                 mSecondCurveStartPoint.y);
 
         mSecondCurveControlPoint2.set(
