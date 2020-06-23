@@ -32,6 +32,8 @@ public class MainActivity extends AppCompatActivity {
         customBottomNavigationView.setClipChildren(false);
         customBottomNavigationView.setClipToPadding(false);
         customBottomNavigationView.setClipToOutline(false);
+        customBottomNavigationView.setItemIconTintList(null);
+
         BottomNavigationMenuView menuView = (BottomNavigationMenuView) customBottomNavigationView.getChildAt(0);
             final View iconView = menuView.getChildAt(1).findViewById(com.google.android.material.R.id.icon);
             menuView.setClipChildren(false);

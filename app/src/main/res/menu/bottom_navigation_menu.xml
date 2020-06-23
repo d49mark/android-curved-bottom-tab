@@ -9,7 +9,7 @@
         />
     <item
         android:id="@+id/navigation_sms"
-        android:icon="@drawable/ic_home_black_24dp"
+        android:icon="@drawable/ic_action_home"
         android:title="Tanya"
         />
     <item
