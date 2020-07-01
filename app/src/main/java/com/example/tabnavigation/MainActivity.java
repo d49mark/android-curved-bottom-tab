@@ -1,4 +1,5 @@
 package com.example.tabnavigation;
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.util.TypedValue;
@@ -20,6 +21,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 public class MainActivity extends AppCompatActivity {
     private int CENTER_ICON_OFFSET=80 ;
 
+    @SuppressLint("RestrictedApi")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
         customBottomNavigationView.setClipChildren(false);
         customBottomNavigationView.setClipToPadding(false);
         customBottomNavigationView.setClipToOutline(false);
+        customBottomNavigationView.setItemIconTintList(null);
+
         BottomNavigationMenuView menuView = (BottomNavigationMenuView) customBottomNavigationView.getChildAt(0);
             final View iconView = menuView.getChildAt(1).findViewById(com.google.android.material.R.id.icon);
             menuView.setClipChildren(false);
